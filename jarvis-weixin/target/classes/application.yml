@@ -1,0 +1,19 @@
+server:
+    port: 9999
+    servlet-path: /jarvis/weixin
+
+spring:
+
+    datasource:
+        beanPath: com.jarvis.weixin.dao.models
+        mapperXmlPath: classpath:mapper/*.xml
+        mapperPath: com.jarvis.weixin.dao.mapper
+        master:
+            name: ReadAndWrite
+            url: jdbc:mysql://182.92.78.118:3306/jarvis?useUnicode=true&characterEncoding=utf-8&useSSL=false
+            username: root
+            password: root
+
+weixin:
+    zjdwToken: jarvis666
+    zjdwEncodingAESKey: e9xFRv4r6PigZugWhPXskbY5bPFrVjR7kelJ9U7pzZE
